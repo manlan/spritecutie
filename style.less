@@ -1,0 +1,121 @@
+@font-face {
+    font-family: advocut;
+    src: url(fonts/advocut.ttf);
+    font-weight: 400;
+}
+
+* { padding: 0; margin: 0; font-family: advocut }
+
+body { background: #82B0B9; color: #fff; font-size: 16px; text-shadow: 1px 1px 2px rgba(120, 0, 50, 0.9); text-align: center; line-height: 24px}
+
+a { color: inherit; }
+#app { height: 100%; }
+
+#logo { 
+  left: 32px; top: 32px; line-height: 32px; height: 64px; width: 288px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 32px; text-align: center;
+  
+
+
+  
+  .logo { vertical-align: top } 
+  .cutie { vertical-align: top }
+
+}
+
+#dropZone { display: block; font-size: 32px; top: 50%; width: 100%; position: absolute; margin-top: -40px; }
+
+#editor { 
+  position: absolute;
+  display: none; top: 128px; 
+  box-shadow: inset 0 0 10px #666; 
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  min-width: 560px;
+  z-index: 2;
+
+}
+
+#preview { display: block; }
+#hud { position: absolute; top: 0; left: 0;}
+
+#regions { 
+  padding: 6px;
+  background: #333;
+  text-shadow: none;
+  text-align: left;  
+}
+
+button { 
+  font-size: 20px; 
+  border: 0;
+  background: #4A9;
+  padding: 2px 6px;
+  color: #fff;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#list { 
+
+  span { margin: 0 4px; padding: 1px 4px; color: #aef; display: inline-block }
+  span:nth-child(2n) { color: #0fa }
+  span.active { color: #fff; background: #246; }
+  span.locked { color: #fff; background: #642; }
+}
+
+
+
+#demo { color: #f86; text-shadow: 1px 1px 1px #000; cursor: pointer }
+
+#copyright { 
+  position: absolute;
+  right: 32px;
+  bottom: 32px;  
+  padding: 0 16px;
+  font-size: 18px;
+  text-shadow: none;
+  a { color: #f00; }
+}
+
+#flattr { float: left; }
+#facebook { float: right; margin-right: 28px; }
+#wykop { float: right; }
+#social { margin-bottom: 8px; padding-top: 32px; width: 320px; margin: auto; height: 32px; }
+
+#csf { display: none; a { color: #fc0; } }
+
+
+#chatReminder {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px; 
+  padding: 8px;
+}
+
+#chat { 
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  text-align: left;
+  width: 480px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 6px;
+  z-index: 0;
+
+  color: #fff;
+  text-shadow: 0 1px 0 #888;
+
+  input { width: 100%; background: #fff; border: none; border-radius: 6px; padding: 4px; font-size: 18px; }
+
+  .cutie { padding-left: 24px; background: url(img/16x16.png) left 2px no-repeat; color: #9fa; }
+
+  line-height: 24px;
+
+  h1 { font-size: 20px; color: #fff;  }
+}
+
